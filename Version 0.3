@@ -1,0 +1,403 @@
+Algoritmo "QuimioApp"
+//Apenas metais alcalinos
+tipo
+   elemento = registro
+      nome: caractere
+      simbol: caractere
+      num_atm: caractere
+      mass_atm: caractere
+      periodo: caractere
+      curiosity: caractere
+   fimregistro
+
+Var
+   cont: inteiro
+   met_alcalin: vetor[1..6] de elemento
+   met_alcalinter: vetor[1..6] de elemento
+   comand:inteiro
+   search_name: caractere
+
+
+procedimento CURIOSITYTER
+
+inicio
+
+
+   se cont = 1 então
+
+      escreval ("=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-")
+      escreval ("              *Principais Usos e Curiosidades*")
+      escreval ("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=")
+      escreval ("O berílio é o elemento químico de número atômico (Z) igual a 4")
+      escreval (" e seu único isótopo natural encontrado na Terra é o 49Be  ")
+      escreval ("Mas existem também outros cinco isótopos:  46Be, 47Be, 48Be, ")
+      escreval ("410Be e 411Be.co berílio-10 é radioativo e possui meia-vida ")
+      escreval (" de 1.600.000 anos")
+      escreval ("sendo formado pela colisão de raios cósmicos com a atmosfera")
+      escreval (" superior O berílio-9 não é radioativo.")
+      escreval ("O berílio é um elemento altamente tóxico, sendo que se")
+      escreval ("a pessoa aspirar os seus sais, ela poderá sentir calafrios, ")
+      escreval ("tosse dolorosa Nos casos mais graves, ele pode causar inflamaço")
+      escreval ("nos pulmões, ")
+      Escreval ("falta de ar e levar a uma doença que não tem cura,")
+      Escreval ("chamada de beriliose ou granulomatose pulmonar crônica,")
+      escreval ("que pode levar à morte Os que enfrentam maiores riscos de")
+      escreval ("desenvolver essa doença são garimpeiros e lapidadores de")
+      escreval ("água-marinha, ")
+      Escreval ("berilo e esmeralda, bem como trabalhadores de indústrias")
+      escreval ("que usam ligas de berílio")
+      leia (comand)
+      limpatela
+      MENU
+   fimse
+   se (cont = 2) então
+      escreval ("=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-")
+      escreval ("              *Principais Usos e Curiosidades*")
+      escreval ("=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-")
+      Escreval("Este elemento é encontrado em diversos produtos, incluindo alguns medicamentos.")
+      Escreval("Ele também é utilizado na indústria de pirotecnia, de borracha, como fertilizante para solo, e ainda nas indústrias têxtil e papeleira. ")
+      Escreval("É também material componente de algumas lâmpadas de flash. ")
+      Escreval("Nos organismos vivos exerce papel fundamental, como por exemplo na fotossíntese, ")
+      Escreval("além disso, o organismo dos seres humanos necessita de magnésio para um bom funcionamento. ")
+      Escreval("Caso haja carência alguns dos sintomas podem ser a diarreia e o vômito, além de calcificação nos tecidos e até convulsões. ")
+      leia (comand)
+      limpatela
+      MENU
+   fimse
+fimprocedimento
+
+
+procedimento CURIOSITY
+inicio
+
+   //Curiosidades Do Litio somente se cont igual a 1
+   se cont = 1 então
+      escreval ("=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-")
+      escreval ("              *Principais Usos e Curiosidades*")
+      escreval ("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=")
+      escreval ("Na Medicina o Litio é ultilizado  como remedio atráves do")
+      escreval ("Carbonato de Sódio para transtorno bipolar (antipsicotico)")
+      escreval ("Regulador de humor e antidepressivo")
+      escreval ()
+      escreval ("Usado na Industria eletro-eletronica e metalurgica como tamb-")
+      escreval ("em ultilizado na produção de: baterias, plásticos, borrachas ")
+      escreval ("sintéticas e medicamentos, sendo util igualmente na industria")
+      escreval ("optica por ser um cristal transparente à radiação ultraviole-")
+      escreval ("ta.")
+   fimse
+   //Texto Curiosidade do Sódio somente se cont igual a 2
+   se cont = 2 então
+      escreval ("=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-")
+      escreval ("               *Principais Usos e Curiosidades*")
+      escreval ("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=")
+      escreval ("Encontrado principalmente em aréa marinhas e na composição de")
+      escreval ("minérais. Na culinaria é comumente chamado de Sal de cozinha,")
+      escreval ("o NaCl (substancia feita a partir do sódio e do cloro) é ")
+      escreval ("ultilizado para dar sabor aos alimentos Na Industria, como")
+      escreval ("para produção de borracha sintetica. Ao manusear o sódio no ")
+      escreval ("laboratorio é importante se ater que ele em sua forma metálica")
+      escreval ("pode vim a ter carater explosivo e já em contato com a agua ")
+      escreval ("e com outros elementos pode vim a ter caráter venenoso.")
+   fimse
+   // Texto Curiosiodade sobre o Potassio somente se cont igual a 3
+   se cont = 3 então
+      escreval ("=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-")
+      escreval ("               *Principais Usos e Curiosidades*")
+      escreval ("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=")
+      escreval ("O Potássio é um mineral simples e comumente encontrado, tanto")
+      escreval ("na natureza quanto no corpo humano.")
+      escreval (" Beneficios para o organismo:")
+      escreval ("Prevenção de doenças cardiovasculares, Saúde Mental e ")
+      escreval ("Nervosa, Regulação do metabolismo, Uso do cálcio, Balanço de ")
+      escreval ("líquidos, Alívio de dores, Combate ao estresse e à ansiedade")
+      escreval ("Perda de peso, Ganho de massa muscular, Controlador de pressão")
+      escreval ("arterial, etc...")
+      escreval ("Comumente encontrado em alimentos como: Beterraba,Banana, ")
+      escreval ("Damasco,Pêssego,Couve Flor entre outros.")
+
+   fimse
+   // Texto curiosidade sobre o Rubidio somente se cont igual a 4
+   se cont = 4 então
+      escreval ("=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-")
+      escreval ("               *Principais Usos e Curiosidades*")
+      escreval ("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=")
+      escreval ("Encontrado em minerais como a polucita, carnalite, leucita e ")
+      escreval ("lepidolita, o elemento rubídio é Principalmente ultilizado no")
+      escreval ("setor de pesquisas de novas tecnologias porem podendo ser ")
+      escreval ("ultilizado tambem na industrias de fogos de artificios ")
+      escreval ("apresentando a cor purpura ao ser queimado. Já na Medicina ")
+      escreval ("tambem pode ser ultilizado no tratamento da epilepsia no ")
+      escreval ("preparo de soporíferos e sedativos")
+   fimse
+   // Texto curiosidade sobre o Césios somente se cont igual a 5
+   se cont = 5 então
+      escreval ("=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-")
+      escreval ("               *Principais Usos e Curiosidades*")
+      escreval ("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=")
+      escreval ("O césio é um rádioisótopo altamente nocivo a saude humana. ")
+      escreval ("a exemplo de seu grau radiotividade pode-se mencionar o ")
+      escreval ("acidente ocorrido em Goiânia em setembro de 1987 onde dois ")
+      escreval ("catadores de materias reciclaves encontraram uma cápsula de ")
+      escreval ("continha césio 137 19 g de cloreto de césio (CsCl)) sobre ")
+      escreval ("escombros de um hospital. capsula essa que posteriormente ")
+      escreval ("foi vendido a um ferro velho e violada, liberando um material")
+      escreval ("poroso e luminoso chamando a atenção de quem o via, entretando ")
+      escreval ("de caracter radiotivo o resultado desse acidente foi a morte ")
+      escreval ("de 4 pessoas e a contaminação de mais de 200 nos anos ")
+      escreval ("posteriores ao acontecimento. ")
+   fimse
+   // Texto Curiosidade sobre o Francio somente se cont igual a 6
+   se cont = 6 então
+      escreval ("=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-")
+      escreval ("               *Principais Usos e Curiosidades*")
+      escreval ("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=")
+      escreval ("O Frâncio é um elemento de grande instabilidade e tempo de ")
+      escreval ("meia-vida muito curto (22 minutos) por esse motivo seu uso ")
+      escreval ("comercial torna-se pouco viavel sem contar pela sua escassez ")
+      escreval ("que só perde para a do astato entretanto apesar de bastante ")
+      escreval ("escasso apenas um pequeno montante de frâncio pode ser ")
+      escreval ("necessário para acarretar os mais diversos problemas de saúde ")
+      escreval ("ligados a materiais radioativos (como tumores e cânceres")
+      escreval ("Mas, como a exposição a esse elemento é tão restrita, ")
+      escreval ("os casos de contaminação são nulos.")
+   fimse
+
+fimprocedimento
+
+procedimento MENU
+var
+inicio
+   // Apresentação do progama
+   escreval ("==============================================================")
+   escreval ("Bem Vindo Ao sistema QuimiosCuriosity's")
+   escreval ("Versão 2.0 Beta [metais alcalinos e Metais alcalinos-terrosos]")
+   escreval (">> Informaçoes & curiosidades sobre os elementos químico <<")
+   escreval ("==============================================================")
+   escreval ("Digite Qualquer tecla para continuar...")
+   leia (comand)
+   limpatela
+   escreval ("-=-=-=-=-=-=-=--=-=-=-==-MENU-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==")
+   escreval ("Digite 1 Para metais Alcalinos: Lítio, Sódio... Etc")
+   escreval ("Digite 2 Para metais Alcalinos-Terrosos,Berílio, Magnésio... Etc")
+   escreval ("Ou Digite qualquer tecla para Créditos")
+   escreval ("-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=")
+   leia (comand)
+   // Comando para apresentar créditos dos desenvolvedores
+   se (comand = 1) então
+      limpatela
+      SEARCHMETALC
+   fimse
+
+   se (comand = 2) então
+      SEARCHAMETALCTER
+   fimse
+   limpatela
+   CREDITOS
+fimprocedimento
+
+procedimento SEARCHMETALC
+inicio
+   cont<-0 //Contagem inicia com 0
+   repita
+      //Pedir elemento para que seja buscado no "banco de dados"
+      escreval ("Digite o nome do elemento que está buscando")
+      //salvar em variavel para pesquisa
+      leia (search_name)
+      repita
+         //Iniciar contagem
+         cont<-cont+1
+         //Para contagem quando nome de buscar igual ao do banco de dados
+      ate (search_name = met_alcalin[cont].nome) ou (cont > 5)
+      // Se contagem maior que 6 então elemento não encontrado
+      se (cont > 5) então
+         limpatela
+         escreval ("Não foi possivel encontrar elemento que você procura")
+      senão
+         //Senão, contagem identifica o elemento
+      fimse
+      limpatela
+      //apresentar dados sobre o elemento atráves da contagem
+      escreval ("Elemento encontrado!")
+      escreval ("=======================================================")
+      escreval ("Nome do Elemento :",met_alcalin[cont].nome)
+      escreval ("Simbolo do Elemento: [",met_alcalin[cont].simbol,"]")
+      escreval ("Numero Atômico: ",met_alcalin[cont].num_atm)
+      escreval ("Massa Atômica: ",met_alcalin[cont].mass_atm)
+      escreval ("Periodo Na Tabela Periodica: ",met_alcalin[cont].periodo)
+      CURIOSITY
+      leia (comand)
+      limpatela
+
+fimprocedimento
+
+procedimento SEARCHAMETALCTER
+inicio
+   limpatela
+   cont<-0 //Contagem inicia com 0
+   repita
+      //Pedir elemento para que seja buscado no "banco de dados"
+      escreval ("Digite o nome do elemento que está buscando")
+      //salvar em variavel para pesquisa
+      leia (search_name)
+      repita
+         //Iniciar contagem
+         cont<-cont+1
+         //Para contagem quando nome de buscar igual ao do banco de dados
+      ate (search_name = met_alcalinter[cont].nome) ou (cont > 5)
+      // Se contagem maior que 6 então elemento não encontrado
+      se (cont > 5) então
+         limpatela
+         escreval ("Não foi possivel encontrar elemento que você procura")
+      senão
+         //Senão, contagem identifica o elemento
+      fimse
+      limpatela
+      //apresentar dados sobre o elemento atráves da contagem
+      escreval ("Elemento encontrado!")
+      escreval ("=======================================================")
+      escreval ("Nome do Elemento :",met_alcalinter[cont].nome)
+      escreval ("Simbolo do Elemento: [",met_alcalinter[cont].simbol,"]")
+      escreval ("Numero Atômico: ",met_alcalinter[cont].num_atm)
+      escreval ("Massa Atômica: ",met_alcalinter[cont].mass_atm)
+      escreval ("Periodo Na Tabela Periodica: ",met_alcalinter[cont].periodo)
+      CURIOSITYTER
+      leia (comand)
+      limpatela
+
+fimprocedimento
+
+procedimento CREDITOS
+inicio
+   limpatela
+
+   escreval ("=========================")
+   escreval ("Sistema Desenvolvido por:")
+   escreval ("        Iago Alves       ")
+   escreval ("       Anatalia Reis     ")
+   escreval ("          Gilmar         ")
+   escreval ("      Roberto Carlos     ")
+   escreval ("-------------------------")
+   escreval ("          SENAI          ")
+   escreval ("        Turma 61318      ")
+   escreval ("    Desenv. De Sistemas  ")
+   escreval ("=========================")
+   leia (comand)
+   escreval ("-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=")
+   escreval ("                   *Fontes de pesquisas Utilizadas*             ")
+   escreval ("-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-")
+   escreval ("https:www.youtube.com/watch?v=68DEJZ_w4Tc")
+   escreval ("pt.wikipedia.org/wiki/Lítio    ")
+   escreval ("brasilescola.uol.com.br/o-que-e/quimica/o-que-e-cesio-137.html")
+   escreval ("www.todamateria.com.br/tabela-periodica/")
+   escreval ("pt.wikipedia.org/wiki/Rub%C3%ADdio")
+   escreval ("www.infoescola.com/elementos-quimicos/rubidio/")
+   escreval ("mundoeducacao.bol.uol.com.br/quimica/rubidio.htm")
+   escreval ("www.queroviverbem.com.br/potassio-para-que-serve/")
+   escreval ("www.infoescola.com/elementos-quimicos/potassio/")
+   escreval ("consultaremedios.com.br/cloreto-de-potassio/bula")
+   escreval ("codificar.com.br/aplicativos/requisitosfuncionais-nao-funcionais")
+   escreval ("pt.wikipedia.org/wiki/Fr%C3%A2ncio")
+   escreval ("www.infoescola.com/elementos-quimicos/francio/")
+   leia (comand)
+   limpatela
+   MENU
+fimprocedimento
+
+Inicio
+   // REGISTROS METAIS ALCALINOS
+   mudacor("amarelo","frente")
+   mudacor("azul","Fundos")
+   
+
+   //Registros de informaçoes sobre metal alcalino 1 (Litio)
+   met_alcalin[1].nome<-("litio")
+   met_alcalin[1].simbol<-("Li")
+   met_alcalin[1].num_atm<-("3")
+   met_alcalin[1].mass_atm<-("6.941")
+   met_alcalin[1].periodo<-("2º")
+
+   //Registros de informaçoies sobre metal alcalino 2 (Sódio)
+   met_alcalin[2].nome<-("sodio")
+   met_alcalin[2].simbol<-("Na")
+   met_alcalin[2].num_atm<-("11")
+   met_alcalin[2].mass_atm<-("22.99")
+   met_alcalin[2].periodo<-("3º")
+   //Registros de informaçoes sobe metal alcalino 3 (Potassio)
+   met_alcalin[3].nome<-("potassio")
+   met_alcalin[3].simbol<-("K")
+   met_alcalin[3].num_atm<-("19")
+   met_alcalin[3].mass_atm<-("39.098")
+   met_alcalin[3].periodo<-("4º")
+   //Registros de Informaçoes Sobre metal alcalino 4 (Rubidio)
+   met_alcalin[4].nome<-("rubidio")
+   met_alcalin[4].simbol<-("Rb")
+   met_alcalin[4].num_atm<-("37")
+   met_alcalin[4].mass_atm<-("85.468")
+   met_alcalin[4].periodo<-("4º")
+   //Registros de Informaçoes Sobre metal alcalino 5 (Césio)
+   met_alcalin[5].nome<-("cesio")
+   met_alcalin[5].simbol<-("Cs")
+   met_alcalin[5].num_atm<-("55")
+   met_alcalin[5].mass_atm<-("132.905")
+   met_alcalin[5].periodo<-("5º")
+   //Registros de Informaçoes Sobre metal alcalino 5 (Frâncio)
+   met_alcalin[6].nome<-("francio")
+   met_alcalin[6].simbol<-("Fr")
+   met_alcalin[6].num_atm<-("87")
+   met_alcalin[6].mass_atm<-("223")
+   met_alcalin[6].periodo<-("6º")
+
+   // REGISTRO ALCALINOS TERROSOS
+
+   //Registros de Informaçoes Sobre metal alcalino terroso (Berílio)
+   met_alcalinter[1].nome<-("berilio")
+   met_alcalinter[1].simbol<-("Be")
+   met_alcalinter[1].num_atm<-("4")
+   met_alcalinter[1].mass_atm<-("9.012")
+   met_alcalinter[1].periodo<-("2º")
+
+   //Registros de informaçoes Sobre metal alcaino terroso ("Magnésio")
+   met_alcalinter[2].nome<-("magnesio")
+   met_alcalinter[2].simbol<-("Mg")
+   met_alcalinter[2].num_atm<-("12")
+   met_alcalinter[2].mass_atm<-("24.305")
+   met_alcalinter[2].periodo<-("3º")
+
+   //Registros de informaçoes Sobre metal alcaino terroso ("Cálcio")
+   met_alcalinter[3].nome<-("calcio")
+   met_alcalinter[3].simbol<-("Ca")
+   met_alcalinter[3].num_atm<-("20")
+   met_alcalinter[3].mass_atm<-("40.078")
+   met_alcalinter[3].periodo<-("4º")
+
+   //Registros de informaçoes Sobre metal alcaino terroso ("Estrôncio")
+   met_alcalinter[4].nome<-("estroncio")
+   met_alcalinter[4].simbol<-("Sr")
+   met_alcalinter[4].num_atm<-("38")
+   met_alcalinter[4].mass_atm<-("87.62")
+   met_alcalinter[4].periodo<-("5")
+
+   //Registros de informaçoes Sobre metal alcaino terroso ("Bário")
+   met_alcalinter[5].nome<-("bario")
+   met_alcalinter[5].simbol<-("Ba")
+   met_alcalinter[5].num_atm<-("56")
+   met_alcalinter[5].mass_atm<-("137.327")
+   met_alcalinter[5].periodo<-("5º")
+
+   //Registros de informaçoes Sobre metal alcaino terroso ("Rádio")
+   met_alcalinter[6].nome<-("radio")
+   met_alcalinter[6].simbol<-("Ra")
+   met_alcalinter[6].num_atm<-("88")
+   met_alcalinter[6].mass_atm<-("[226]")
+   met_alcalinter[6].periodo<-("6º")
+
+   MENU
+
+   escreval ("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-")
+   escreval (" Obrigado Por  ultilizar o Quimio's Curiosity System ")
+   escreval ("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-")
+   leia (comand)
+   limpatela
+   MENU
+
+Fimalgoritmo
